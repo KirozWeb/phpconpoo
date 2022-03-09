@@ -1,4 +1,7 @@
 <?php
+error_reporting(E_ALL);
+ini_set('display_errors', '1');
+
 class Perro{
 
     //ATRIBUTOS
@@ -78,4 +81,5 @@ $kenai->comer('croquetas');
 $kenai->aparecer();
 $kenai->tienepulgas();
 $kenai->ladrar_y_comer();
+echo '<p>' . $kenai->color .'</p>';
 ?>
