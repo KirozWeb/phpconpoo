@@ -81,5 +81,5 @@ $kenai->comer('croquetas');
 $kenai->aparecer();
 $kenai->tienepulgas();
 $kenai->ladrar_y_comer();
-echo '<p>' . $kenai->color .'</p>';
+echo '<p>' . $kenai->sexo .'</p>';
 ?>
