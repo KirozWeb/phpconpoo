@@ -61,6 +61,11 @@
     INSERT INTO users SET user = '@usuario', email = 'usuario@midominio.com',
     name = 'Soy un usuario', birthday = '1988-10*09', pass = MD5('un_password'),
     role = 'Admin';
+
+
+    /*Salvar status */
+    REPLACE INTO estado (estado_id, estado_) VALUES (0, 'Otro Status');
+    REPLACE estado SET estado_id = 0, estado_ = 'Otro Status';
     /*Actualizar*/
         /*Datos generales*/
         UPDATE users SET name = 'Soy un Usuario', birthday = '1984-10-09', role = 'User'
@@ -79,5 +84,12 @@
             SELECT * FROM users WHERE email = 'usuario@midominio.com';
             /*role*/
             SELECT * FROM users WHERE role = 'User';
+
+
+    /*REPLACE*/
+
+    REPLACE users SET user = '@usuario', pass = MD5('un_nuevo_password');
+    REPLACE users SET user = '@usuario', email = 'usuario@midominio.com', name = 'Soy 
+    un Usuario', birthday = '1988-09-08', pass = MD5('un_nuevo_password'), role = 'Admin';
 
 

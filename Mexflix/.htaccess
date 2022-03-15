@@ -1,0 +1,9 @@
+#Options +FollowSymlinks
+#RewriteEngine On
+
+#RewriteBase /phpconpoo/Mexflix
+
+#RewriteCond %{SCRIPT_FILENAME} !-d
+#RewriteCond %{SCRIPT_FILENAME} !-from
+
+#Rewrite ^(.*)$ index.php?r=$1 [L]
