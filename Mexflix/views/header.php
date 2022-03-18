@@ -1,3 +1,5 @@
+<?php
+print('
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,14 +18,24 @@
         <div style="background:blue" class="item  i-b  v-middle  ph12  lg2 lg-left">
             <h1 class="logo">Mexflix</h1>
         </div>
-        <nav style="background:pink" class="item  i-b  v-middle  ph12  lg10  lg-right menu">
-            <ul class="container">
-                <li class="nobullet  item inline"><a href="./">Inicio</a></li>
-                <li class="nobullet  item inline"><a href="movieseries">MovieSeries</a></li>
-                <li class="nobullet  item inline"><a href="usuarios">Usuarios</a></li>
-                <li class="nobullet  item inline"><a href="status">Status</a></li>
-                <li class="nobullet  item inline"><a href="salir">Salir</a></li>
-            </ul>
-        </nav>
+        ');
+
+        if($_SESSION['ok'])
+        {
+            printf('
+            <nav style="background:pink" class="item  i-b  v-middle  ph12  lg10  lg-right menu">
+                <ul class="container">
+                    <li class="nobullet  item inline"><a href="./">Inicio</a></li>
+                    <li class="nobullet  item inline"><a href="movieseries">MovieSeries</a></li>
+                    <li class="nobullet  item inline"><a href="usuarios">Usuarios</a></li>
+                    <li class="nobullet  item inline"><a href="status">Status</a></li>
+                    <li class="nobullet  item inline"><a href="salir">Salir</a></li>
+                </ul>
+            </nav>
+            ');
+        }
+        
+    print('
     </header>
     <main class="container center main">
+    ');

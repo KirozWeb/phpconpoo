@@ -7,7 +7,6 @@ $template = '
     <p class="p1 f1_25">Tu email es <b>%s</b></p>
     <p class="p1 f1_25">Tu cumpleaños es <b>%s</b></p>
     <p class="p1 f1_25">Tu perfil de usuario tiene nivel de <b>%s</b></p>
-    <input type="text">
 </article>
 ';
 

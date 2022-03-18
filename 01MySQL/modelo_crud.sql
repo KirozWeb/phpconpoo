@@ -7,6 +7,12 @@
     poster = '', rating = 8.0, genres = 'Crime, Drama, Thriller', category = 'Serie',
     estado_id = 3;
 
+    REPLACE INTO movieseries SET imdb_id = 'tt0816692', 
+        title = 'interestellar', plot = 'Earth\'s future has been riddled by disasters, famines, and droughts. There is only one way to ensure mankind\'s survival: Interstellar travel. A newly discovered wormhole in the far reaches of our solar system allows a team of astronauts to go where no man has gone before, a planet that may have the right environment to sustain human life.', author = 'Christopher Nolan', actors = 'Matthew McConaughey, Anne Hathaway, Jessica Chastain',
+        country = 'United States, United Kingdom, Canada', premiere = '2014', trailer = 'https://www.youtube.com/watch?v=UoSSbmD9vqc', 
+        poster = 'https://m.media-amazon.com/images/M/MV5BZjdkOTU3MDktN2IxOS00OGEyLWFmMjktY2FiMmZkNWIyODZiXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg', rating = 8, genres = 'Adventure, Drama, Sci-Fi', estado_id = 1, 
+        category = 'Movie';
+
     /*Actualizar movieseries*/
     update movieseries set title = 'Gotham', plot = "The story behind Detective James 
     Gordon's rise to prominence in Gotham City in the years before Batman's arrival.",

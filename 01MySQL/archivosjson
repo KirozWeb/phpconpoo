@@ -107,3 +107,118 @@
         "Type":"series",
         "totalSeasons":"5",
         "Response":"True"}
+
+        {
+            "Title":"Interstellar",
+            "Year":"2014",
+            "Rated":"PG-13",
+            "Released":"07 Nov 2014",
+            "Runtime":"169 min",
+            "Genre":"Adventure, Drama, Sci-Fi",
+            "Director":"Christopher Nolan",
+            "Writer":"Jonathan Nolan, Christopher Nolan",
+            "Actors":"Matthew McConaughey, Anne Hathaway, Jessica Chastain",
+            "Plot":"Earth's future has been riddled by disasters, famines, and droughts. There is only one way to ensure mankind's survival: Interstellar travel. A newly discovered wormhole in the far reaches of our solar system allows a team of astronauts to go where no man has gone before, a planet that may have the right environment to sustain human life.",
+            "Language":"English",
+            "Country":"United States, United Kingdom, Canada",
+            "Awards":"Won 1 Oscar. 44 wins & 148 nominations total",
+            "Poster":"https://m.media-amazon.com/images/M/MV5BZjdkOTU3MDktN2IxOS00OGEyLWFmMjktY2FiMmZkNWIyODZiXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg",
+            "Ratings":[
+                {
+                "Source":"Internet Movie Database",
+                "Value":"8.6/10"},
+                {
+                "Source":"Rotten Tomatoes",
+                "Value":"72%"},
+                {
+                "Source":"Metacritic",
+                "Value":"74/100"}],
+                "Metascore":"74",
+                "imdbRating":"8.6",
+                "imdbVotes":"1,693,580",
+                "imdbID":"tt0816692",
+                "Type":"movie",
+                "DVD":"31 Mar 2015",
+                "BoxOffice":"$188,020,017",
+                "Production":"N/A",
+                "Website":"N/A",
+                "Response":"True"}
+                https://www.youtube.com/watch?v=UoSSbmD9vqc
+        <table>
+        <tr>
+            <td>status_id</td>
+            <td>status</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Cooming Soon</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Release</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>In Issue</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Finished</td>
+        </tr>
+    </table>
+    <input type="button" class="button" value="Enviar">
+    <input type="button" class="button add" value="Enviar">
+    <input type="button" class="button edit" value="Enviar">
+    <input type="button" class="button delete" value="Enviar">
+
+
+    /**************************/
+
+    <div class="item">
+        <table>
+            <tr>
+                <th>Id</th>
+                <th>Status</th>
+                <th colspan="2">
+                    <form method="POST">
+                        <input type="hidden" name="r" value="status-add">
+                        <input class="button add" type="submit" value="Agregar">
+                    </form>
+                </th
+            </tr>
+            ';
+        for($n=0; $n < count($status); $n++){
+            $template_status .= '
+            <tr>
+                <td>' . $status[$n]['estado_id'] . '</td>
+                <td>' . $status[$n]['estado_'] . '</td>
+                <td>
+                    <form method="POST">
+                        <input type="hidden" name="r" value="status-edit">
+                        <input type="hidden" name="estado_id" value="'. $status[$n]['estado_id'] . '">
+                        <input class="button edit" type="submit" value="Editar">
+                    </form>
+                </td>
+                <td>
+                    <form method="POST">
+                        <input type="hidden" name="r" value="status-delete">
+                        <input type="hidden" name="estado_id" value="'. $status[$n]['estado_id'] . '">
+                        <input class="button delete" type="submit" value="Eliminar">
+                    </form>
+                </td>
+            </tr>
+            ';
+            
+        }
+
+        $template_status .= '
+        </table>
+    </div>    
+    ';
+
+        "REPLACE INTO movieseries SET imdb_id = 'tt0816692', 
+        title = 'interestellar', plot = 'Earth\'s future has been riddled by disasters, famines, and droughts. There is only one way to ensure mankind\'s survival: Interstellar travel. A newly discovered wormhole in the far reaches of our solar system allows a team of astronauts to go where no man has gone before, a planet that may have the right environment to sustain human life.', author = 'Christopher Nolan', actors = 'Matthew McConaughey, Anne Hathaway, Jessica Chastain',
+        country = 'United States, United Kingdom, Canada', premiere = '2014', trailer = 'https://www.youtube.com/watch?v=UoSSbmD9vqc', 
+        poster = 'https://m.media-amazon.com/images/M/MV5BZjdkOTU3MDktN2IxOS00OGEyLWFmMjktY2FiMmZkNWIyODZiXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg', rating = 8, genres = 'Adventure, Drama, Sci-Fi', estado_id = 1, 
+        category = 'Movie'";
+        
